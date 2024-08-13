@@ -6,8 +6,6 @@
 }
 
 body {
-    margin: 0px;
-    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +22,7 @@ body {
     border-radius: 25px;
     background: hsl(298, 36%, 15%);
     overflow: hidden;
-    margin: 5%;
+    margin: 2%;
 }
 
 .head-block {
