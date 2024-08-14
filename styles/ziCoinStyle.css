@@ -17,12 +17,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 400px;
     height: 100vh;
-    border-radius: 25px;
+    border-radius: 15px;
     background: hsl(298, 36%, 15%);
     overflow: hidden;
-    margin: 2%;
+    /* margin: 2%; */
 }
 
 .head-block {
@@ -51,9 +52,11 @@ body {
 }
 
 .profile img {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
+    margin: 2px;
+    /* padding: 2px; */
 }
 
 .profile p {
@@ -61,7 +64,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 0.7rem;
     font-weight: bold;
-    margin: 0px;
+    margin: 10px 0px;
     padding: 2px;
 }
 
@@ -77,10 +80,29 @@ body {
     /* margin: 5px; */
 }
 
+.account-balance {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.account-balance #username {
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+    /* background-color: aqua; */
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
 .control-box img {
     width: 30px;
     height: 30px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 2px;
 }
 
@@ -95,15 +117,57 @@ body {
     /* margin: 2px; */
     font-size: 10px;
     background-color: hsl(250, 50%, 60%);
-    padding: 5px;
+    padding: 2px;
     /* flex: 1; */
+}
+
+.controls:hover {
+    background: linear-gradient(360deg, #6856c2, #c3bd9f, #6856c2);
+    box-shadow: 0px 0px 10px 0.1px #edbe03;
+    transition: 700ms;
 }
 
 .control-box span {
     /* color: #fff; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 0.7rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     margin: 0px;
-    padding: 2px;
+    padding: 12px 5px 12px 5px;
+    border-radius: 5px;
+    /* background-color: aqua; */
+}
+
+.control-box span:hover {
+    font-size: 12px;
+    transition: 500ms;
+}
+
+.body-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+    background: hsl(299, 35%, 30%);
+    border: 8px solid hsl(250, 50%, 60%);
+    border-radius: 50%;
+    box-shadow: 0px 0px 25px 0.8px #edbe03;
+}
+
+.body-block span {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #edbe03;
+}
+
+
+.coount-down img {
+    width: 300px;
+    height: 300px;
+    padding: 60px;
 }
