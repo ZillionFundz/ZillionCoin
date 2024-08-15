@@ -164,7 +164,7 @@ body {
     padding: 5px;
     /* min-width: 370px; */
     height: 250px;
-    max-height: 120px;
+    /* max-height: 120px; */
     background: radial-gradient(#1c0c1d, #663267, #1c0c1d);
     /* border: 2px solid hsl(250, 50%, 60%); */
     border-radius: 0px 0px 10px 10px;
