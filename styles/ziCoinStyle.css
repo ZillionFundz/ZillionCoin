@@ -15,7 +15,7 @@ body {
 
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     width: 380px;
@@ -149,8 +149,8 @@ body {
     justify-content: center;
     align-items: center;
     margin: 5px;
-    min-width: 360px;
-    height: 360px;
+    min-width: 370px;
+    height: 400px;
     background: radial-gradient(#1c0c1d, #663267, #1c0c1d);
     /* border: 2px solid hsl(250, 50%, 60%); */
     border-radius: 10px;
@@ -208,4 +208,10 @@ body {
     gap: 5px;
     padding: 5px;
     border-radius: 5px;
+    color: #7766cc;
+}
+
+.panel-box span {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
 }
