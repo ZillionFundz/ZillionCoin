@@ -182,8 +182,6 @@ body {
 }
 
 #airdrop1 {
-    /* background-color: #1c0c1d; */
-    border: 1px solid #1c0c1d;
     width: 180px;
     min-height: 50px;
     height: 100%;
@@ -193,8 +191,6 @@ body {
 }
 
 #airdrop2 {
-    /* background-color: #1c0c1d; */
-    border: 1px solid #1c0c1d;
     width: 180px;
     min-height: 50px;
     border-radius: 5px;
