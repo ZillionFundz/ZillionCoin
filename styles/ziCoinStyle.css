@@ -157,22 +157,20 @@ body {
 }
 
 .body2-block {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     /* margin: 0px; */
-    padding: 5px;
-    /* min-width: 370px; */
-    height: 250px;
-    /* max-height: 120px; */
+    padding: 10px;
+    width: 370px;
+    height: 150px;
+    max-height: 200px;
     background: radial-gradient(#1c0c1d, #663267, #1c0c1d);
     /* border: 2px solid hsl(250, 50%, 60%); */
     border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
 }
 
 .body2-block span {
     margin: 4px;
-    padding: 0px 5px;
+    padding: 10px 5px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -186,8 +184,9 @@ body {
 #airdrop1 {
     /* background-color: #1c0c1d; */
     border: 1px solid #1c0c1d;
-    width: 175px;
-    min-height: 40px;
+    width: 180px;
+    min-height: 50px;
+    height: 100%;
     border-radius: 5px;
     margin: 4px 2px;
     padding: 10px;
@@ -196,8 +195,8 @@ body {
 #airdrop2 {
     /* background-color: #1c0c1d; */
     border: 1px solid #1c0c1d;
-    width: 175px;
-    min-height: 40px;
+    width: 180px;
+    min-height: 50px;
     border-radius: 5px;
     margin: 4px 2px;
     padding: 10px;
