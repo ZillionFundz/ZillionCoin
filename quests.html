@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZICoin</title>
+    <title>Quests</title>
     <link rel="stylesheet" href="styles/ziCoinStyle.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
@@ -34,61 +34,57 @@
                 </div>
             </div>
         </div>
-        <div class="body1-block">
-            <div class="count-down">
-                <!-- <img src="images/tap-image.png" alt="balance"> -->
-                <span id="super-reading">00</span id="mini-reading"><span>:</span><span>00</span>
-            </div>
-        </div>
-        <div class="body2-block">
-            <h3>Airdrop Area</h3>
-            <!-- Airdrop Code Starts Here:👇 -->
-            <div class="airdrop-area">
-                <div class="cntd-pannel">
-                    <div class="head-content">
-                        <p>ZICoins:<span><i>By ZillionFundz($ZIC).</i></span></p>
-                        <h2>Airdrop Launching Soon</h2>
+        <div class="quests-area">
+            <div class="quest-container">
+                <h3>Quests Area</h3>
+                <!-- Airdrop Code Starts Here:👇 -->
+                <div class="airdrop-area">
+                    <div class="cntd-pannel">
+                        <div class="head-content">
+                            <!-- <p>ZICoins:<span><i>By ZillionFundz($ZIC).</i></span></p> -->
+                            <h2>Quests for more points</h2>
+                        </div>
+                        <div class="quests-group"> <!--The pannel holding quest boxes-->
+                            <div class="quests-box">
+                                <P id="task1">Follow Account on <span id="X"></span> </P>
+                                <a href="https://x.com/crypto_xbt8492" target="_blank"><button
+                                        onclick="fetchTask()">Check</button></a>
+                            </div>
+                            <div class="quests-box">
+                                <P id="task1">Follow on Instagram</P>
+                                <a href="https://www.instagram.com/zillionfundzfx/" target="_blank"><button
+                                        onclick="fetchTask()">Check</button></a>
+                            </div>
+                            <div class="quests-box">
+                                <P id="task1">Follow on Facebook</P>
+                                <a href="https://www.facebook.com/profile.php?id=100095346411391"
+                                    target="_blank"><button onclick="fetchTask()">Check</button></a>
+                            </div>
+                            <div class="quests-box">
+                                <P id="task1">Subscribe to YouTube (20 $ZIC)</P>
+                                <a href="https://www.youtube.com/@ZillionFundz" target="_blank"><button
+                                        onclick="fetchTask()">Check</button></a>
+                            </div>
+                            <div class="quests-box">
+                                <P id="task1">Comment on X Pinned Post (20 $ZIC)</P>
+                                <a href="https://www.youtube.com/@ZillionFundz" target="_blank"><button
+                                        onclick="fetchTask()">Check</button></a>
+                            </div>
+                        </div>
                     </div>
-                    <hr>
-                    <hr>
-                    <div class="countdown-group">
-                        <div class="counting-box">
-                            <P id="days">00</P>
-                            <hr>
-                            <span class="count-text">Day(s)</span>
-                        </div>
-                        <div class="counting-box">
-                            <P id="hours">00</P>
-                            <hr>
-                            <span class="count-text">Hour(s)</span>
-                        </div>
-                        <div class="counting-box">
-                            <P id="minutes">00</P>
-                            <hr>
-                            <span class="count-text">Minute(s)</span>
-                        </div>
-                        <div class="counting-box">
-                            <P id="seconds">00</P>
-                            <hr>
-                            <span class="count-text">Second(s)</span>
-                        </div>
-                    </div>
-                    <hr>
-                    <hr>
                 </div>
             </div>
-
         </div>
         <div class="footer-block">
             <div class="control-box">
                 <div class="panel-box" id="farm">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="images/mining.png" alt="settings">
                         <span>Farm</span>
                     </a>
                 </div>
                 <div class="panel-box" id="quests">
-                    <a href="quests.html">
+                    <a href="#">
                         <img src="images/task.png" alt="quest">
                         <span>Quests</span>
                     </a>
