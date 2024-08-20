@@ -185,6 +185,7 @@ body {
     border-radius: 10px 10px 0px 0px;
 }
 
+/* Just as body2-block in Farm page*/
 .quest-container {
     /* margin: 0px; */
     padding: 5px 0px 0px;
@@ -254,7 +255,7 @@ body {
     margin: 4px;
     padding: 2%;
     min-width: 370px;
-    height: 450px;
+    /* height: 550px; */
     background: radial-gradient(#1c0c1d, #663267, #1c0c1d);
     /* border: 2px solid hsl(250, 50%, 60%); */
     border-radius: 10px 10px 0px 0px;
