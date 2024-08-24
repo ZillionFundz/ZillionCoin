@@ -35,10 +35,10 @@ let endMining = null;
 
 function mining() {
     firstSeconds++;
-    if (firstSeconds == 3) {
+    if (firstSeconds == 60) {
         firstSeconds = 0;
         firstMinutes++;
-        if (firstMinutes == 2) {
+        if (firstMinutes == 60) {
             firstMinutes = 0;
             firstHours++;
         }
@@ -58,50 +58,65 @@ function mining() {
     boxer.style.fontFamily = "Verdana, Geneva, Tahoma, sans-serif";
     // box.style.backdropFilter = "blur(40px)";
 
-    const points = document.getElementById("points");
-    let counter = 0;
-    const countInterval = setInterval(perearning, 1000);
-    function perearning() {
-        counter++;
-        points.innerHTML = counter;
-        if (counter >= 500) {
-            clearInterval(countInterval);
-        }
-    }
-
     if (s >= 0 || endMining !== null) {
         boxer.innerHTML = "Mining has Started.";
-        if (h >= 4) {
-            boxer.innerHTML = "Mining Completed.";
-            clearInterval(endMining);
-            [s, m, h] = [0, 0, 0];
-            miningTime.innerHTML = "00:00:00";
-            boxer.appendChild(button);
-            button.innerHTML = "Claim $ZIC";
-            boxer.addEventListener("onclick", function (e) {
-                if (e.target.tagName === "button") {
-                    // const points = document.getElementById("points");
-                    // let counter = 0;
-                    // const countInterval = setInterval(perearning, 1000);
-                    // function perearning() {
-                    //     counter++;
-                    //     if (counter >= 500) {
-                    //         clearInterval(countInterval);
-                    //     }
-                    // }
-                }
-            }, false);
 
+        //MINING POINTS IS HERE BELOW:👇
+        let [counter1, counter2] = [0, 0];
+        if (firstSeconds == 5) {
+            const mainPoints = document.getElementById("main-points");
+            const fractionalPoints = document.getElementById("fractional-points");
+            // let counter1 = 0;
+            const countInterval = setInterval(perearning, 1000);
+
+            function perearning() {
+                counter1++;
+                if (counter1 == 10) {
+                    counter1 = 0;
+                    counter2++;
+                }
+                fractionalPoints.innerHTML = counter1;
+                mainPoints.innerHTML = counter2;
+
+                if (counter2 >= Number(2) || h >= 12) {
+                    clearInterval(countInterval, endMining);
+                    [counter1, counter2, s, m, h] = [0, 0, 0, 0, 0];
+                    // [s, m, h] = [0, 0, 0];
+                    miningTime.innerHTML = "00:00:00";
+
+                }
+            }
+
+            if (h >= 12) {
+                boxer.innerHTML = "Mining Completed.";
+                clearInterval(endMining);
+                [s, m, h] = [0, 0, 0];
+                miningTime.innerHTML = "00:00:00";
+                boxer.appendChild(button);
+                button.innerHTML = "Claim $ZIC";
+                boxer.addEventListener("onclick", function (e) {
+                    if (e.target.tagName === "button") {
+                        // const mainPoints = document.getElementById("points");
+                        // let counter = 0;
+                        // const countInterval = setInterval(perearning, 1000);
+                        // function perearning() {
+                        //     counter++;
+                        //     if (counter >= 500) {
+                        //         clearInterval(countInterval);
+                        //     }
+                        // }
+                    }
+                }, false);
+
+            }
         }
 
     }
-    // const button = document.createElement("button");
-    // if (miningtime === "00:00:00") {
-    //     boxer.appendChild(button);
-    // }
+
+
 }
 
-function startMining() {
+function startTiming() {
     setInterval(mining, 1000);
 
 }
