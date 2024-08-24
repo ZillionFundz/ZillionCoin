@@ -78,7 +78,7 @@ function mining() {
                 fractionalPoints.innerHTML = counter1;
                 mainPoints.innerHTML = counter2;
 
-                if (counter2 >= Number(2) || h >= 12) {
+                if (counter2 >= Number(100) || h >= 12) {
                     clearInterval(countInterval, endMining);
                     [counter1, counter2, s, m, h] = [0, 0, 0, 0, 0];
                     // [s, m, h] = [0, 0, 0];
