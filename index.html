@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZICoin</title>
+    <title>ZINCoin</title>
     <link rel="stylesheet" href="styles/ziCoinStyle.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
@@ -16,8 +16,11 @@
                 <img src="images/ZIC.png" alt="ZICoin profile picture">
                 <p id="username">$ZIC</p>
             </div>
-            <div class="account-balance">
-                <p id="balance">0.000</p>
+            <div class="function-group">
+                <div class="timing-box">
+                    <p id="balance">0.000</p>
+                    <p id="miningtime">00:00:00</p>
+                </div>
                 <div class="control-box">
                     <div class="controls" id="settings">
                         <span>settings</span>
@@ -38,9 +41,13 @@
             <div class="ring-border">
                 <div class="count-down">
                     <!-- <img src="images/tap-image.png" alt="balance"> -->
-                    <span id="super-reading">00</span><span id="reading-colon">:</span><span id="mini-reading">00</span>
+                    <span id="points">0</span>
                 </div>
             </div>
+        </div>
+        <div id="start-mining-box">
+            <p>Mine for 12 Hours?</p>
+            <Button onclick="startMining()">Mine $ZIC</Button>
         </div>
         <div class="body2-block">
             <h3>Airdrop Area</h3>
