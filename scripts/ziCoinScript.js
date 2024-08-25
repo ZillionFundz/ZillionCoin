@@ -26,19 +26,22 @@ let x = setInterval(function () {
     }
 }, 1000);
 
+//EVERYTHING MINING STARTS HERE BELOW:👇
 
-// MINING READING TIME DIGITS IS HERE BELOW:👇
+// (MINING READING TIME DIGITS IS HERE BELOW):👇
 let [firstSeconds, firstMinutes, firstHours] = [0, 0, 0];
 let miningTime = document.getElementById("miningtime");
-let endMining = null;
+// let endMining = null;
+let countInterval1;
+let countInterval2
 
 
 function mining() {
     firstSeconds++;
-    if (firstSeconds == 60) {
+    if (firstSeconds == 8) {
         firstSeconds = 0;
         firstMinutes++;
-        if (firstMinutes == 60) {
+        if (firstMinutes == 2) {
             firstMinutes = 0;
             firstHours++;
         }
@@ -51,60 +54,63 @@ function mining() {
 
     //TEST IF MINING HERE:👇
     const button = document.createElement("button");
-    const boxer = document.getElementById("start-mining-box");
-    boxer.style.fontSize = "1.3rem";
-    boxer.style.color = "#999896";
-    boxer.style.fontWeight = "bold";
-    boxer.style.fontFamily = "Verdana, Geneva, Tahoma, sans-serif";
+    const miningBox = document.getElementById("mining-box");
+    miningBox.style.fontSize = "1.3rem";
+    miningBox.style.color = "#999896";
+    miningBox.style.fontWeight = "bold";
+    miningBox.style.fontFamily = "Verdana, Geneva, Tahoma, sans-serif";
     // box.style.backdropFilter = "blur(40px)";
 
-    if (s >= 0 || endMining !== null) {
-        boxer.innerHTML = "Mining has Started.";
+    if (s >= 2) {
+        miningBox.innerHTML = "Mining has Started.";
+        // miningBox.style.opacity = "0";
 
-        //MINING POINTS IS HERE BELOW:👇
-        let [counter1, counter2] = [0, 0];
-        if (firstSeconds == 5) {
-            const mainPoints = document.getElementById("main-points");
-            const fractionalPoints = document.getElementById("fractional-points");
-            // let counter1 = 0;
-            const countInterval = setInterval(perearning, 1000);
+        //EARNING POINTS IS HERE BELOW:👇
+        let [counter1, counter2, counter3] = [0, 0, 0];
+        if (firstSeconds == 4) {
+            // miningBox.style.opacity = "5";
+            let pseudoPoints = document.getSelection
+            let mainPoints = document.getElementById("main-points");
+            let fractionalPoints = document.getElementById("fractional-points");
+            countInterval2 = setInterval(perearning, 1000);
 
             function perearning() {
                 counter1++;
                 if (counter1 == 10) {
                     counter1 = 0;
                     counter2++;
+                    if (counter2 == 10) {
+                        counter2 = 0;
+                        counter3++
+                    }
                 }
+
                 fractionalPoints.innerHTML = counter1;
                 mainPoints.innerHTML = counter2;
-
-                if (counter2 >= Number(100) || h >= 12) {
-                    clearInterval(countInterval, endMining);
-                    [counter1, counter2, s, m, h] = [0, 0, 0, 0, 0];
+                const earnings = (number(mainPoints) * 10) + number(fractionalPoints);
+                if (counter2 >= 1) {
+                    clearInterval(countInterval2);
+                    // clearInterval(countInterval2);
+                    [counter1, counter2] = [0, 0];
                     // [s, m, h] = [0, 0, 0];
-                    miningTime.innerHTML = "00:00:00";
+                    // [s, m, h] = [0, 0, 0];
+                    // miningTime.innerHTML = "00:00:00";
 
                 }
             }
 
-            if (h >= 12) {
-                boxer.innerHTML = "Mining Completed.";
-                clearInterval(endMining);
+            if (h >= 2) {
+                miningBox.innerHTML = "Mining Completed.";
+                clearInterval(countInterval1);
+                clearInterval(countInterval2);
                 [s, m, h] = [0, 0, 0];
                 miningTime.innerHTML = "00:00:00";
-                boxer.appendChild(button);
+                miningBox.appendChild(button);
                 button.innerHTML = "Claim $ZIC";
-                boxer.addEventListener("onclick", function (e) {
+                miningBox.addEventListener("onclick", function (e) {
                     if (e.target.tagName === "button") {
-                        // const mainPoints = document.getElementById("points");
-                        // let counter = 0;
-                        // const countInterval = setInterval(perearning, 1000);
-                        // function perearning() {
-                        //     counter++;
-                        //     if (counter >= 500) {
-                        //         clearInterval(countInterval);
-                        //     }
-                        // }
+                        const balance = document.getElementById("balance");
+                        balance.innerHTML = number(earnings);
                     }
                 }, false);
 
@@ -115,8 +121,8 @@ function mining() {
 
 
 }
-
+// let countInterval2 = setInterval(mining, 1000);
 function startTiming() {
-    setInterval(mining, 1000);
+    countInterval1 = setInterval(mining, 1000);
 
 }

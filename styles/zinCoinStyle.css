@@ -19,7 +19,7 @@ body {
 
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     width: 380px;
@@ -384,7 +384,7 @@ body {
     color: #7766cc;
 }
 
-#start-mining-box {
+#mining-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -401,12 +401,20 @@ body {
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0.9px #5d48c5;
     width: 80%;
-    font-size: 1.5rem;
+
     position: relative;
+    transition: opacity 3s;
 }
 
-#start-mining-box::before {
-    content: "";
+#mining-box::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "0";
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e3bc1f;
+    padding: 10px;
     width: 55px;
     height: 40px;
     background: radial-gradient(#9d91d9, #5d48c5, #39053a);
@@ -417,7 +425,7 @@ body {
     box-shadow: 0px 0px 10px 0.9px #570158;
 }
 
-#start-mining-box button {
+#mining-box button {
     width: 150px;
     height: 40px;
     border-radius: 15px;
@@ -427,10 +435,10 @@ body {
     font-weight: bold;
 }
 
-#start-mining-box button:hover {
-    width: 155px;
-    height: 45px;
-    border-radius: 12px;
+#mining-box button:hover {
+    width: 152px;
+    height: 42px;
+    border-radius: 14px;
     background: linear-gradient(#999896, #bb9c1f, #39053a);
     border: 1px solid #af0b7b;
     cursor: pointer;
@@ -439,14 +447,14 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#start-mining-box button:active {
+#mining-box button:active {
     font-size: 15px;
     border-radius: 15px;
     background: linear-gradient(#999896, #bb9c1f, #39053a);
     border: none;
 }
 
-#start-mining-box p {
+#mining-box p {
     color: #999896;
     font-size: 1.3rem;
     font-weight: bold;
@@ -528,7 +536,7 @@ body {
 
 .count-down span {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 45px;
+    font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
     color: #edbe03;
