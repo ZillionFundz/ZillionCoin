@@ -112,10 +112,11 @@ function mining() {
                 miningBox.appendChild(button);
                 miningBox.appendChild(div);
                 button.innerHTML = "Claim $ZIC";
-                miningBox.addEventListener("onclick", function (e) {
+                miningBox.addEventListener("click", function (e) {
                     if (e.target.tagName === "button") {
                         const balance = document.getElementById("balance");
                         balance.innerHTML = number(earnings);
+                        alert("$ZIC Points claimed Successfully");
                     }
                 }, false);
 
