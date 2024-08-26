@@ -452,7 +452,7 @@ body {
     width: 85px;
     height: 50px;
     position: absolute;
-    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    background-image: conic-gradient(from var(--angle), #0000ff, #18fc04, #0000ff);
     top: 50%;
     left: 50%;
     translate: -50% -50%;
