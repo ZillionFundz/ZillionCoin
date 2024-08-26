@@ -299,7 +299,8 @@ body {
     border: 1px solid #af0b7b;
     border-radius: 10px;
     margin: 5px;
-    padding: 1px 2px
+    padding: 1px 2px;
+    position: relative;
 }
 
 .quests-box p {
@@ -307,8 +308,11 @@ body {
     /* color: #4b2941; */
     font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
+    font-weight: bold;
     margin: 2px 2 2px 1px;
     padding: 2px 2px 2px 0px;
+    position: absolute;
+    left: 40px;
 }
 
 .quests-box img {
@@ -342,7 +346,7 @@ body {
     color: #edbe03;
 }
 
-.zic-task button {
+.zin-task button {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -350,7 +354,7 @@ body {
     padding: 2px 10px 2px 2px;
 }
 
-.zic-task button img {
+.zin-task button img {
     width: 22px;
     height: 22px;
     /* margin: 2px 4px 2px; */
@@ -401,28 +405,52 @@ body {
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0.9px #5d48c5;
     width: 80%;
-
     position: relative;
     transition: opacity 3s;
+
+    /* Animated Border Here:👇 */
+
 }
 
-#mining-box::before {
+#zin {
     display: flex;
     align-items: center;
     justify-content: center;
-    content: "0";
-    font-size: 1.5rem;
+    /* content: "0"; */
+    font-family: 'New', Courier, monospace;
+    font-size: 1.8rem;
     font-weight: bold;
     color: #e3bc1f;
     padding: 10px;
-    width: 55px;
-    height: 40px;
+    width: 85px;
+    height: 50px;
     background: radial-gradient(#9d91d9, #5d48c5, #39053a);
     border-radius: 50%;
-    top: -15px;
+    top: -45px;
     left: -25px;
+    /* position: relative; */
     position: absolute;
     box-shadow: 0px 0px 10px 0.9px #570158;
+    margin: auto;
+    padding: 1em;
+
+    /* Animated Border Here:👇 */
+
+}
+
+#zin::before,
+#zin::after {
+    content: "";
+    width: 85px;
+    height: 50px;
+    position: absolute;
+    background-image: conic-gradient(#ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    border-radius: 450%;
+    padding: 30px 45px;
 }
 
 #mining-box button {
