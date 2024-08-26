@@ -412,7 +412,8 @@ body {
 
 }
 
-#zin {
+#zin,
+.zin {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -438,19 +439,42 @@ body {
 
 }
 
-#zin::before,
-#zin::after {
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.zin::after,
+.zin::before {
+    /* --angle: 0deg; */
     content: "";
     width: 85px;
     height: 50px;
     position: absolute;
-    background-image: conic-gradient(#ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
     top: 50%;
     left: 50%;
     translate: -50% -50%;
     z-index: -1;
     border-radius: 450%;
     padding: 30px 45px;
+    animation: 3s spin linear infinite;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
+}
+
+.zin::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
 }
 
 #mining-box button {

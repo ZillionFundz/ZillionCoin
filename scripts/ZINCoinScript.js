@@ -103,7 +103,7 @@ function mining() {
                 }
             }
 
-            if (h >= 2) {
+            if (h >= 12) {
                 miningBox.innerHTML = "Mining Completed.";
                 clearInterval(countInterval1);
                 clearInterval(countInterval2);
