@@ -289,6 +289,58 @@ body {
     border-radius: 5px;
 }
 
+
+.highlight-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+    height: 50px;
+    /* gap: 50px; */
+    border: 1px solid #af0b7b;
+    border-radius: 10px;
+    margin: 10px 5px;
+    padding: 1px 2px;
+    position: relative;
+}
+
+.highlight-box img {
+    width: 30px;
+    height: 30px;
+    margin: 2px 1px 2px 2px;
+    padding: 2px 0px 2px 2px;
+}
+
+.highlight-box p {
+    color: #aba0a0;
+    /* color: #4b2941; */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 2px 2 2px 1px;
+    padding: 2px 2px 2px 0px;
+    position: absolute;
+    left: 40px;
+}
+
+.highlight-box a {
+    text-decoration: none;
+}
+
+.highlight-box button {
+    color: #000;
+    background-color: rgba(93, 72, 197);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.7rem;
+    /* font-weight: bold; */
+    margin: 10px;
+    padding: 4px 2px;
+    border: none;
+    border-radius: 10px;
+    width: 80px;
+    cursor: pointer;
+}
+
 .quests-box {
     display: flex;
     justify-content: space-between;
@@ -386,6 +438,70 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #7766cc;
+}
+
+/* Child to: CNTD-PANNEL (Bellow: 👇*/
+.perform-task {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 93%;
+    margin: 10px auto;
+    padding: 5px;
+    background: linear-gradient(#39053a, #7f6082, #3b173e);
+    border-radius: 20px;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.perform-task-minibox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 20px auto 0px;
+    padding: 15px 10px;
+    background-color: rgba(93, 72, 197, 0.2);
+    border-radius: 50px 50px 20px 20px;
+    border-top: 20px solid#edbe03;
+    border-bottom: 5px solid#edbe03;
+    /* opacity: 5; */
+    top: 55%;
+    left: 50%;
+}
+
+.perform-task-minibox p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: #c3bd9f;
+    margin: 10px 2px;
+}
+
+.perform-task-minibox button {
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 2px;
+    padding: 5px;
+}
+
+.perform-task-minibox img {
+    width: 110px;
+    height: 120px;
 }
 
 #mining-box {
@@ -596,6 +712,7 @@ body {
 }
 
 .cntd-pannel {
+    /* Parent to: PERFORM TASK (Above: 👆)*/
     width: 100%;
     max-width: 400px;
     margin: auto;
@@ -603,6 +720,7 @@ body {
     background: radial-gradient(#1c0c1d, #663267, #1c0c1d);
     border-radius: 10px;
     font-size: 0.8rem;
+    position: relative;
 }
 
 .countdown-group {

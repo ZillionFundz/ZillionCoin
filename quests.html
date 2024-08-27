@@ -39,22 +39,37 @@
                 <h3>Quests Area</h3>
                 <!-- Airdrop Code Starts Here:👇 -->
                 <div class="airdrop-area">
-                    <div class="cntd-pannel">
+                    <div class="cntd-pannel" id="cntd-pnl">
                         <div class="head-content">
                             <!-- <p>ZINoins:<span><i>By ZillionFundz($ZIN).</i></span></p> -->
                             <h2>Quests for more points</h2>
                         </div>
-                        <!-- <div id="claim-points">
-                            <p>Claimed Successfully.</p>
-                            <Button>Claim $ZIN</Button>
-                        </div> -->
+                        <div id="unit-task" class="perform-task">
+                            <div class="highlight-box" id="twitter">
+                                <img src="images/x.png" alt="twitter">
+                                <P id="x-task">Follow Account on X</P>
+                                <a href="https://x.com/crypto_xbt8492" target="_blank">
+                                    <div class="zin-task">
+                                        <button id="twitter-button" onclick="fetchTask()"><img src="images/ZIN.png"
+                                                alt="ZINoin">20
+                                            $ZIN</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="perform-task-minibox">
+                                <img id="big-coin" src="images/ZIN.png" alt="ZINCoin">
+                                <p>Make sure you complete the task above.</p>
+                                <button onclick="performtask()">View Task</button>
+                            </div>
+                        </div>
                         <div class="quests-group"> <!--The pannel holding quest boxes-->
                             <div class="quests-box" id="twitter">
                                 <img src="images/x.png" alt="twitter">
                                 <P id="x-task">Follow Account on X</P>
                                 <a href="https://x.com/crypto_xbt8492" target="_blank">
                                     <div class="zin-task">
-                                        <button onclick="fetchTask()"><img src="images/ZIN.png" alt="ZINoin">20
+                                        <button id="twitter-button" onclick="fetchTask()"><img src="images/ZIN.png"
+                                                alt="ZINoin">20
                                             $ZIN</button>
                                     </div>
                                 </a>
@@ -63,7 +78,7 @@
                                 <img src="images/ig.png" alt="instagram">
                                 <P id="instagram-task">Follow on Instagram</P>
                                 <a href="https://www.instagram.com/zillionfundzfx/" target="_blank">
-                                    <div class="zin-task">
+                                    <div id="instagram-button" class="zin-task">
                                         <button onclick="fetchTask()"><img src="images/ZIN.png" alt="ZINoin">20
                                             $ZIN</button>
                                     </div>
@@ -73,7 +88,7 @@
                                 <img src="images/ytb.png" alt="youtube">
                                 <P id="youtube-task">Subscribe to YouTube</P>
                                 <a href="https://www.youtube.com/@ZillionFundz" target="_blank">
-                                    <div class="zin-task">
+                                    <div id="youtube-button" class="zin-task">
                                         <button onclick="fetchTask()"><img src="images/ZIN.png" alt="ZINoin">20
                                             $ZIN</button>
                                     </div>
@@ -84,17 +99,17 @@
                                 <P id="facebook-task">Follow on Facebook</P>
                                 <a href="https://www.facebook.com/profile.php?id=100095346411391&mibextid=ZbWKwL"
                                     target="_blank">
-                                    <div class="zin-task">
+                                    <div id="facebook-button" class="zin-task">
                                         <button onclick="fetchTask()"><img src="images/ZIN.png" alt="ZINoin">20
                                             $ZIN</button>
                                     </div>
                                 </a>
                             </div>
                             <div class="quests-box" id="tiktok">
-                                <img src="images/tkt.png" alt="telegram">
+                                <img src="images/tkt.png" alt="tiktok">
                                 <P id="tiktok-task">Follow on TikTok</P>
                                 <a href="https://www.tiktok.com/@zillionfundz001?_t=8p2ET6oUhi1&_r=1" target="_blank">
-                                    <div class="zin-task">
+                                    <div id="tiktok-button" class="zin-task">
                                         <button onclick="fetchTask()"><img src="images/ZIN.png" alt="ZINoin">20
                                             $ZIN</button>
                                     </div>
@@ -104,17 +119,17 @@
                                 <img src="images/tlg.png" alt="telegram">
                                 <P id="telegram-task">Subscribe to Telegram</P>
                                 <a href="https://t.me/+XWsJdtA5b3MyMzU0" target="_blank">
-                                    <div class="zin-task">
+                                    <div id="telegram-button" class="zin-task">
                                         <button onclick="fetchTask()"><img src="images/ZIN.png" alt="ZINoin">20
                                             $ZIN</button>
                                     </div>
                                 </a>
                             </div>
-                            <div class="quests-box" id="tiktok">
+                            <div class="quests-box" id="friends">
                                 <img src="images/Quests-friends.png" alt="telegram" style="border-radius: 7px;">
                                 <P id="tiktok-task">Invite 5 friends</P>
                                 <a href="https://shorturl.at/b3f8K" target="_blank">
-                                    <div class="zin-task">
+                                    <div id="friends-button" class="zin-task">
                                         <button onclick="fetchTask()"><img src="images/ZIN.png" alt="ZINoin">50
                                             $ZIN</button>
                                     </div>
@@ -155,7 +170,7 @@
             </div>
         </div>
     </div>
-    <script src="scripts/ZINoinScript.js"></script>
+    <script src="scripts/zinCoinScript.js"></script>
 </body>
 
 </html>
