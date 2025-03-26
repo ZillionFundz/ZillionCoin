@@ -111,12 +111,12 @@ function mining() {
                 miningTime.innerHTML = "00:00:00";
                 miningBox.appendChild(button);
                 miningBox.appendChild(div);
-                button.innerHTML = "Claim $ZIC";
+                button.innerHTML = "Claim $ZIL";
                 miningBox.addEventListener("click", function (e) {
                     if (e.target.tagName === "button") {
                         const balance = document.getElementById("balance");
                         balance.innerHTML = number(earnings);
-                        alert("$ZIC Points claimed Successfully");
+                        alert("$ZIL Points claimed Successfully");
                     }
                 }, false);
 
