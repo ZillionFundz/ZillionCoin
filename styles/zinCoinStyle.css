@@ -101,10 +101,6 @@ body {
     border-radius: 5px;
 }
 
-#balance a{
-    color: #fff;
-}
-
 #miningtime {
     width: 100%;
     background: radial-gradient(#1c0c1d, #59385c, #491349);
@@ -168,6 +164,10 @@ body {
     background-color: hsl(250, 50%, 60%);
     padding: 4px;
     /* flex: 1; */
+}
+
+.controls a{
+    color: #000;
 }
 
 .controls:hover {
