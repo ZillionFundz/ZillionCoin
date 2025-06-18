@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilities</title>
+    <link rel="stylesheet" href="styles/zinCoinStyle.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="head-block">
+            <div class="profile">
+                <img src="images/ZIN.png" alt="ZINoin profile Icon">
+                <p id="username">ONET</p>
+            </div>
+            <div class="function-group">
+                <div class="timing-box">
+                    <p id="balance">0.000</p>
+                    <p id="miningtime">00:00:00</p>
+                </div>
+                <div class="control-box">
+                    <div class="controls" id="ballance">
+                        <span>utility</span>
+                        <img src="images/balance.png" alt="settings" title="utility">
+                    </div>
+                    <div class="controls" id="settings">
+                        <span>settings</span>
+                        <img src="images/settings.png" alt="balance" title="settings">
+                    </div>
+                    <div class="controls" id="wallet">
+                        <span>wallet</span>
+                        <img src="images/wallet.png" alt="wallet" title="wallet">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body1-block">
+            <div class="ring-border">
+                <div class="count-down">
+                    <!-- <img src="images/tap-image.png" alt="balance"> -->
+                    <span id="main-points">0</span><span id="fractional-points">0</span>
+                </div>
+            </div>
+        </div>
+        <div id="mining-box">
+            <div class="zin" id="zin">0</div>
+            <p>Mine for 12 Hours?</p>
+            <Button onclick="startTiming()">Mine $ONE</Button>
+        </div>
+        <div class="body2-block">
+            <h3>Airdrop Area</h3>
+            <!-- Airdrop Code Starts Here:👇 -->
+            <div class="airdrop-area">
+                <div class="cntd-pannel">
+                    <div class="head-content">
+                        <p>ONET Coin:<span><i>By ZillionFundz($ONE).</i></span></p>
+                        <h2>Airdrop Launching Soon</h2>
+                    </div>
+                    <hr>
+                    <hr>
+                    <div class="countdown-group">
+                        <div class="counting-box">
+                            <P id="days">00</P>
+                            <hr>
+                            <span class="count-text">Day(s)</span>
+                        </div>
+                        <div class="counting-box">
+                            <P id="hours">00</P>
+                            <hr>
+                            <span class="count-text">Hour(s)</span>
+                        </div>
+                        <div class="counting-box">
+                            <P id="minutes">00</P>
+                            <hr>
+                            <span class="count-text">Minute(s)</span>
+                        </div>
+                        <div class="counting-box">
+                            <P id="seconds">00</P>
+                            <hr>
+                            <span class="count-text">Second(s)</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <hr>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-block">
+            <div class="control-box">
+                <div class="panel-box" id="farm">
+                    <a href="#">
+                        <img src="images/mining.png" alt="settings">
+                        <span>Farm</span>
+                    </a>
+                </div>
+                <div class="panel-box" id="quests">
+                    <a href="quests.html">
+                        <img src="images/task.png" alt="quest">
+                        <span>Quests</span>
+                    </a>
+                </div>
+                <div class="panel-box" id="friends">
+                    <a href="friends.html">
+                        <img src="images/friends.png" alt="friends">
+                        <span>Friends</span>
+                    </a>
+                </div>
+
+                <div class="panel-box" id="friends">
+                    <a href="Games.html">
+                        <img src="images/games.png" alt="game">
+                        <span>Games</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/zilCoinScript.js"></script>
+</body>
+
+</html>
