@@ -89,7 +89,7 @@ body {
     /* margin: 2px; */
 }
 
-#balance {
+#balance{
     color: #fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5rem;
@@ -99,6 +99,10 @@ body {
     /* background-color: aqua; */
     border: 1px solid #000;
     border-radius: 5px;
+}
+
+#balance a{
+    color: #fff;
 }
 
 #miningtime {
